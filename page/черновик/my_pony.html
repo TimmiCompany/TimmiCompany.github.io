@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Тимми компани</title>   
+    <link rel="icon" type="image/png" sizes="192x192"  href="../img/papi/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/papi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/papi/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/papi/favicon-16x16.png">
+    <link rel="manifest" href="../img/papi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	  <link href="../style/newsytle.css" type="text/css" rel="stylesheet">
+   </head>
+   <body>
+   <font>
+        <div class="container-fluid">
+            <header>
+                <div class="part-1">
+                    <div class="row">
+                        <div class="col-sm-1">
+                                <div class="no-aa"><a href="#"><img src="../img/irk.png"></a></div>
+                        </div>
+                        <div class="col-sm-5">
+                            <h3>Производство Тимми Компани</h3>
+                        </div>
+                        <div class="col-sm-2">          
+                            <div class="dropdown">
+                                <div class="dropdown-label">Контакты</div>
+                                <div class="dropdown-menu">
+                                    <ul class="submenu">
+                                        <li><a href="#">VK</a></li>
+                                        <li><a href="#">YouTube</a></li>
+                                    </ul>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-sm-4">
+                            <ul>
+                                <li><a href="#">Вход</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <h1>Кто ты из пони ?</h1>
+                </div>
+            </header>
+            <div class="content">
+                <div class="content-2">
+                    <div class="grid">
+                        <div class="b1">Номер вопроса 1/100</div>   
+                        <div class="b2">Вопрос:</div>
+                        <div class="b3">
+                            Варианты ответов:
+                            <div class="vopr1">
+                                <ul>
+                                    <li><button id="ovet1">Ответ 1</button></li>
+                                    <li><button id="ovet2">Ответ 2</button></li>
+                                    <li><button id="ovet3">Ответ 3</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="b4">
+                            <button>Назад</button>
+                            <button id="open">Продолжить</button>
+                            <div class="modal" id="modal">
+                                <div class="modal-body">
+                                    <button class="modal_close" id="close">x</button>
+                                    <h3> Мы выяснили кто ты !</h3>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                var button = document.getElementById('open');
+                                var close = document.getElementById('close');
+                                var modal = document.getElementById('modal');
+                                button.addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    modal.style.display = 'block';
+                                });
+                                close.addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    modal.style.display = 'none';
+                                });
+                            </script>
+                        </div>
+                    </div> 
+                </div>
+                <div class="content-1">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="../img/radyga.png">
+                        </div>
+                        <div class="col-sm-8">
+                            <h3>Это самый подробные тест My Little Pony, который вы найдете в интерненте. Тест покажет тебе твои главные черты характера. Всего лишь ответь на сотню вопросов, и ты сомжешь узнать, какая пони ты на самом деле! Может ты будешь как заботливая Флотершай или резвая как Радуга?</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Ну что, кто ты из пони?<br> Оставь свой комментарий, поделись какая ты пони, и может ты найдешь новых друзей на этом сайте. <br>И не забывай, что дружба - это чудо!</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <form>
+                            <input type="text" name="name" placeholder="Как тебя зовут ?">
+                            <textarea placeholder="Комментарий"></textarea><br>
+                            <button>Отправить</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="../img/pink.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </font>
+   </body>
+</html>

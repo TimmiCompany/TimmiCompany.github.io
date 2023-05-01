@@ -1,0 +1,74 @@
+body {
+	background-image: url(../img/fon.jpg);
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size:100% 100%
+}
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+font {
+	font-family:'Arial';
+	color:#fff;
+	max-width:100px;
+	margin:0 auto;
+}
+.wrapper {
+	background-color: rgba(40, 40, 40, .8);
+	padding:10px 20px 10px 20px;
+	margin:20px;
+	border-radius:20px;
+}
+.header {
+	margin-bottom:px;
+	height:120px;
+	width: 100%;
+	border-bottom:3px solid #fff;
+}
+.content {
+	height:200px;
+	width: 100%;
+	border-bottom:3px solid #fff;
+}
+.sidebar {
+	height:330px;
+	border-bottom:3px solid #fff;
+}
+.sidebar1 {
+	width: 30%;
+	float:left;
+}
+.sidebar2{
+	width: 70%;
+	float:right;
+}
+.footer{
+	height:200px;
+}
+a{
+	text-decoration:none;
+	color:#fff;
+}
+a:hover{
+	text-decoration:underline #fff;
+	font-size:110%;;
+}
+h1 {
+	font-size:40px;
+	font-weight:bolder;
+	border:3px solid #fff;
+	border-radius:10px;
+	background-color:rgba(200, 50, 10, .4);
+	display: block;
+	max-width:320px;
+}
